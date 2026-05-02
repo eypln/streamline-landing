@@ -76,7 +76,7 @@ export default function LetfyLanding() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
+      <header className="border-b border-border bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center space-x-2">
@@ -99,13 +99,18 @@ export default function LetfyLanding() {
               <a href="#faq" className="text-muted-foreground hover:text-foreground transition-colors">
                 FAQ
               </a>
+              <a href="/letify-team" className="text-muted-foreground hover:text-foreground transition-colors">
+                Team
+              </a>
             </nav>
 
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" className="hidden sm:inline-flex">
-                Login
+              <Button variant="ghost" className="hidden sm:inline-flex" asChild>
+                <a href="https://app.letify.cloud/sign-in">Login</a>
               </Button>
-              <Button>Get Started</Button>
+              <Button asChild>
+                <a href="https://app.letify.cloud/sign-up">Get Started</a>
+              </Button>
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className="h-5 w-5" />
               </Button>
@@ -115,7 +120,7 @@ export default function LetfyLanding() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-br from-background to-muted">
+      <section className="py-20 lg:py-32 bg-linear-to-br from-background to-muted">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -382,7 +387,7 @@ export default function LetfyLanding() {
                 {[1, 2, 3, 4].map((i) => (
                   <div
                     key={i}
-                    className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center"
+                    className="aspect-square bg-linear-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center"
                   >
                     <ImageIcon className="h-8 w-8 text-primary" />
                   </div>
@@ -396,7 +401,7 @@ export default function LetfyLanding() {
                 {[1, 2, 3, 4].map((i) => (
                   <div
                     key={i}
-                    className="aspect-[9/16] bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center"
+                    className="aspect-9/16 bg-linear-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center"
                   >
                     <Video className="h-8 w-8 text-primary" />
                   </div>
@@ -468,8 +473,8 @@ export default function LetfyLanding() {
                     <span>Email Support</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-transparent" variant="outline">
-                  Get Plan
+                <Button className="w-full bg-transparent" variant="outline" asChild>
+                  <a href="https://app.letify.cloud/sign-up">Get Plan</a>
                 </Button>
               </CardContent>
             </Card>
@@ -521,8 +526,8 @@ export default function LetfyLanding() {
                     <span>Priority Support</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-transparent" variant="outline">
-                  Get Plan
+                <Button className="w-full bg-transparent" variant="outline" asChild>
+                  <a href="https://app.letify.cloud/sign-up">Get Plan</a>
                 </Button>
               </CardContent>
             </Card>
@@ -589,7 +594,7 @@ export default function LetfyLanding() {
                     <span>Priority Support</span>
                   </li>
                 </ul>
-                <Button className="w-full">Get Plan</Button>
+                <Button className="w-full" asChild><a href="https://app.letify.cloud/sign-up">Get Plan</a></Button>
               </CardContent>
             </Card>
 
@@ -620,8 +625,8 @@ export default function LetfyLanding() {
                     <span>Custom integrations</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-transparent" variant="outline">
-                  Contact Sales
+                <Button className="w-full bg-transparent" variant="outline" asChild>
+                  <a href="mailto:admin@letify.cloud">Contact Sales</a>
                 </Button>
               </CardContent>
             </Card>
