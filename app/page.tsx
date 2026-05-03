@@ -3,10 +3,9 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
 import {
   Check,
-  HomeIcon,
-  Heart,
   TrendingUp,
   Users,
   ArrowRight,
@@ -79,11 +78,11 @@ export default function LetfyLanding() {
       <header className="border-b border-border bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                <HomeIcon className="h-5 w-5 text-primary-foreground" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1.5 shadow-xs">
+              <div className="h-8 w-8 overflow-hidden rounded-full bg-white ring-1 ring-border">
+                <Image src="/Logo/32.png" alt="Letify logo" width={32} height={32} className="h-full w-full object-cover" />
               </div>
-              <span className="text-xl font-bold text-foreground">Letify</span>
+              <span className="text-sm font-semibold text-foreground">Letify - Letting Assistant</span>
             </div>
 
             <nav className="hidden md:flex items-center space-x-8">
@@ -676,11 +675,11 @@ export default function LetfyLanding() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                  <Heart className="h-5 w-5 text-primary-foreground" />
+              <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1.5 shadow-xs">
+                <div className="h-8 w-8 overflow-hidden rounded-full bg-white ring-1 ring-border">
+                  <Image src="/Logo/32.png" alt="Letify logo" width={32} height={32} className="h-full w-full object-cover" />
                 </div>
-                <span className="text-xl font-bold">Letify</span>
+                <span className="text-sm font-semibold text-foreground">Letify - Letting Assistant</span>
               </div>
               <p className="text-muted-foreground">Your best social media assistant that helps your business</p>
             </div>

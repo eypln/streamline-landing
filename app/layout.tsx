@@ -5,9 +5,16 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: 'Letify - Letting Assistant',
+  description: 'Letify - Letting Assistant',
+  icons: {
+    icon: [
+      { url: '/Logo/32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/Logo/192.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [{ url: '/Logo/180.png', sizes: '180x180', type: 'image/png' }],
+    shortcut: ['/Logo/32.png'],
+  },
 }
 
 export default function RootLayout({
