@@ -465,7 +465,7 @@ export default function LetfyLanding() {
                   </li>
                   <li className="flex items-center space-x-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Monthly 15 Facebook Posts</span>
+                    <span>Monthly 30 Facebook Post (text+image)</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -622,6 +622,14 @@ export default function LetfyLanding() {
                   <li className="flex items-center space-x-2">
                     <Check className="h-4 w-4 text-primary" />
                     <span>Custom integrations</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>For agencies and teams</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Contact us for pricing!</span>
                   </li>
                 </ul>
                 <Button className="w-full bg-transparent" variant="outline" asChild>
