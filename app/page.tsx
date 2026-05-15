@@ -317,8 +317,8 @@ export default function LetifyLanding() {
                   Get Started <ArrowRight className="ml-1.5 h-3.5 w-3.5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="md:hidden">
-                <Menu className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="md:hidden" aria-label="Open navigation menu">
+                <Menu className="h-5 w-5" aria-hidden="true" />
               </Button>
             </div>
           </div>
@@ -326,7 +326,7 @@ export default function LetifyLanding() {
       </motion.header>
 
       {/* ══════════════ HERO ══════════════ */}
-      <section ref={heroRef} className="relative min-h-[92vh] flex items-center py-24 lg:py-32">
+      <section ref={heroRef} aria-label="Hero" className="relative min-h-[92vh] flex items-center py-24 lg:py-32">
         <motion.div
           style={{ y: heroY, opacity: heroOpacity }}
           className="container mx-auto px-4 sm:px-6 lg:px-8 w-full"
@@ -362,8 +362,8 @@ export default function LetifyLanding() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-                Transform your real estate presence with automated content creation. Generate engaging posts,
-                stories, and graphics that drive real leads — while you focus on closing deals.
+                The #1 AI tool for Malta real estate agents. Generate engaging posts, stories, and graphics
+                that drive real leads — while you focus on closing deals.
               </motion.p>
 
               <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-3">
@@ -422,7 +422,7 @@ export default function LetifyLanding() {
                 <div className="relative rounded-2xl overflow-hidden h-44 mb-4">
                   <div className="absolute inset-0 bg-linear-to-br from-violet-300/40 via-primary/20 to-sky-300/30" />
                   <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_30%_30%,hsl(var(--primary)/0.28),transparent)]" />
-                  <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 176" preserveAspectRatio="xMidYMid slice">
+                  <svg aria-hidden="true" className="absolute inset-0 w-full h-full" viewBox="0 0 400 176" preserveAspectRatio="xMidYMid slice">
                     <circle cx="330" cy="38" r="24" fill="white" opacity="0.16" />
                     <circle cx="355" cy="28" r="16" fill="white" opacity="0.12" />
                     <circle cx="55" cy="52" r="20" fill="white" opacity="0.11" />
@@ -449,7 +449,7 @@ export default function LetifyLanding() {
                   </svg>
                   <div className="absolute bottom-0 left-0 right-0 p-3 bg-linear-to-t from-black/35 to-transparent flex items-end justify-between">
                     <div className="bg-background/85 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
-                      <div className="text-xs font-semibold leading-tight">3BR Villa · Marbella</div>
+                      <div className="text-xs font-semibold leading-tight">3BR Villa · Valletta</div>
                       <div className="text-[11px] text-muted-foreground">240m² · Pool · Garden</div>
                     </div>
                     <div className="bg-primary/90 text-primary-foreground rounded-lg px-2.5 py-1.5 text-xs font-bold">€1,850/mo</div>
@@ -558,7 +558,7 @@ export default function LetifyLanding() {
       </section>
 
       {/* ══════════════ FEATURES ══════════════ */}
-      <section id="features" className="py-24 bg-background">
+      <section id="features" aria-label="Features" className="py-24 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center space-y-4 mb-16">
             <motion.div variants={fadeUp}>
@@ -622,7 +622,7 @@ export default function LetifyLanding() {
       </section>
 
       {/* ══════════════ EXAMPLES ══════════════ */}
-      <section id="examples" className="py-24 bg-muted/20">
+      <section id="examples" aria-label="Content examples" className="py-24 bg-muted/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center space-y-4 mb-16">
             <motion.div variants={fadeUp}>
@@ -673,7 +673,7 @@ export default function LetifyLanding() {
       </section>
 
       {/* ══════════════ PRICING ══════════════ */}
-      <section id="pricing" className="py-24 bg-background">
+      <section id="pricing" aria-label="Pricing plans" className="py-24 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center space-y-4 mb-16">
             <motion.div variants={fadeUp}>
@@ -788,7 +788,7 @@ export default function LetifyLanding() {
       </section>
 
       {/* ══════════════ FAQ ══════════════ */}
-      <section id="faq" className="py-24 bg-muted/20">
+      <section id="faq" aria-label="Frequently asked questions" className="py-24 bg-muted/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center space-y-4 mb-16">
             <motion.div variants={fadeUp}>
@@ -880,7 +880,7 @@ export default function LetifyLanding() {
                 <span className="text-sm font-semibold">Letify</span>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Your best social media assistant for real estate professionals.
+                The AI-powered social media assistant for Malta real estate professionals.
               </p>
             </div>
 
